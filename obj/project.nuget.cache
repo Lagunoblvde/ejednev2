@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YdpSB1P1VrXcxcoePs7vs1lUmOz8ooxEUL4Vpbypqq4+sHclKEb7xlHDyClXiymu5SdyO+o1xTU5Sx6F/0oblw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vladi\\source\\repos\\VladikHalatik\\VladikHalatik\\VladikHalatik.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vladi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

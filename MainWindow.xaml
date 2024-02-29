@@ -1,0 +1,34 @@
+﻿<Window x:Class="VladikHalatik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VladikHalatik"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="30"/>
+            <RowDefinition Height="Auto" MinHeight="30"/>
+            <RowDefinition Height="Auto" MinHeight="30"/>
+            <RowDefinition Height="Auto" MinHeight="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" MinHeight="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DatePicker x:Name="Date" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="Opisanie" Grid.Column="1" TextWrapping="Wrap" Text="Описание:" IsEnabled="True" FontSize="18" FontFamily="Times New Roman" TextAlignment="Center" Grid.Row="3" RenderTransformOrigin="0.24,0.55" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0,0,0,31"/>
+        <TextBlock x:Name="Nazvanie" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" TextWrapping="Wrap" FontSize="18" FontFamily="Times New Roman" Text="Название:" IsEnabled="False" TextAlignment="Center" Margin="0,0,0,3"/>
+        <Button x:Name="Del" Content="Удалить запись" Grid.Row="6" Margin="0,2,0,3" Click="Del_Click"/>
+        <Button x:Name="create" Grid.Column="1" Content="Создать" Grid.Row="6" Margin="0,2,0,3" Click="create_Click_1"/>
+        <Button x:Name="acc" Grid.Column="2" Content="Сохранить" Grid.Row="6" Margin="0,2,0,3" Click="acc_Click"/>
+        <TextBox x:Name="name" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,37" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+        <TextBox x:Name="podname" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap"  Grid.ColumnSpan="2"/>
+        <ListBox x:Name="Zametki" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" Grid.RowSpan="5" SelectionChanged="Zametki_SelectionChanged"/>
+    </Grid>
+</Window>
